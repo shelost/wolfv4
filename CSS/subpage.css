@@ -1,0 +1,244 @@
+body {
+  background: #EFF2FF;
+  color: black;
+}
+
+.main {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+#wolf .st0 {
+  fill: #0286FF;
+}
+
+#wolf .st1 {
+  fill: #93A1BF;
+}
+
+#wolf .st2 {
+  fill: #7385ac;
+}
+
+#wolf .st3 {
+  fill: #93a1bf;
+}
+
+#wolf .st4 {
+  fill: #455474;
+}
+
+#wolf .st5 {
+  fill: #323d54;
+}
+
+#wolf {
+  width: 90vh;
+  height: 90vh;
+  position: fixed;
+  top: 5vh;
+  left: calc(50vw - 45vh);
+  z-index: -2;
+}
+
+#wolf .wolf-poly {
+  opacity: 0.05;
+}
+
+#wolf .eye {
+  opacity: 0.1;
+}
+
+@media screen and (min-width: 800px) {
+  .title {
+    text-align: center;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+    margin-bottom: 100px;
+  }
+  .title h1 {
+    font-size: 50px;
+    line-height: calc(50px + 5px);
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .title h1 span {
+    font-style: italic;
+  }
+  .title h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+  .title #animation {
+    width: 280px;
+    height: 560px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  .title #animation.dark {
+    background-color: #00041C;
+  }
+  .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 400px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    margin-bottom: 50px;
+  }
+  .slide img {
+    height: 100%;
+  }
+  .slide .expo {
+    margin: 30px;
+    width: 35%;
+    max-width: 600px;
+  }
+  .slide .expo h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 5px;
+    color: #a0a0a0;
+  }
+  .slide .expo h1 {
+    font-size: 50px;
+    line-height: calc(50px + 5px);
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .slide .expo p {
+    font-size: 20px;
+    line-height: calc(20px + 7px);
+    font-weight: 400;
+    margin: 0;
+    width: 90%;
+  }
+  .slide.right .expo h2 {
+    text-align: right;
+    float: right;
+  }
+  .slide.right .expo h1 {
+    text-align: right;
+    float: right;
+  }
+  .slide.right .expo p {
+    text-align: right;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  .title h1 {
+    font-size: 40px;
+    line-height: calc(40px + 5px);
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .title h1 span {
+    font-style: italic;
+  }
+  .title h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 50px;
+    width: 90%;
+  }
+  .title #animation {
+    width: 280px;
+    height: 560px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  .title #animation.dark {
+    background-color: #00041C;
+  }
+  .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    margin-bottom: 50px;
+  }
+  .slide img {
+    width: 80%;
+    border-radius: 35px;
+  }
+  .slide .expo {
+    margin: 30px;
+    width: 80%;
+    text-align: center;
+    max-width: 600px;
+  }
+  .slide .expo h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 5px;
+    color: #a0a0a0;
+  }
+  .slide .expo h1 {
+    font-size: calc(25px * 1.3);
+    line-height: calc(25px*1.3 + 5px);
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .slide .expo p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=subpage.css.map */

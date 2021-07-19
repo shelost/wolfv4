@@ -1,0 +1,186 @@
+@import 'variables';
+
+body{
+    color: black;
+}
+
+@media screen and (min-width: 800px){
+
+    #navbar{
+        background: rgba(white, 0.8);
+    }
+
+    .blog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding-bottom: 50px;
+    }
+
+    .post{
+        background-color: rgba(white, 0.05);
+        border-radius: 16px;
+        width: 28vw;
+        max-width: 1000px;
+        margin-bottom: 60px;
+        transition: 0.2s ease;
+        align-self: stretch;
+        padding: 10px;
+
+        .banner{
+            width: 28vw;
+            height: 18vw;
+            border-radius: 10px;
+            background-size: cover;
+        }
+
+        .info{
+            padding: 5px;
+            margin-top: 10px;
+            color: black;
+            h1{
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+                margin:0;
+                margin-bottom: 10px;
+            }
+            h3{
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+                span{
+                    color: rgba(black, 0.3);
+                }
+            }
+        }
+
+        &.featured{
+            width: 60vw;
+            max-width: 2000px;
+            .banner{
+                width: 60vw;
+                height: 20vw;
+            }
+            p{
+                font-size: 15px;
+                line-height: 18px;
+                color: rgba(black, 0.5);
+            }
+        }
+
+        &.second{
+            .banner{
+                height: 20vw;
+            }
+        }
+
+        &:hover{
+            background-color: rgba($blue, 0.05);
+        }
+    }
+
+    .title{
+        text-align: left;
+        padding: 20px;
+        padding-left: 60px;
+        margin-bottom: 30px;
+        width: fit-content;
+        img{
+            width: 200px;
+            margin-bottom: 5px;
+            transform: translateX(-10px);
+        }
+        h3{
+            border-top: 1px solid rgba(black, 0.2);
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 5px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .post{
+        background-color: rgba(white, 0.05);
+        border-radius: 16px;
+        width: 90vw;
+        margin: 5px;
+        transition: 0.2s ease;
+        padding: 10px;
+
+        .banner{
+            width: 90vw;
+            height: 50vw;
+            border-radius: 10px;
+            background-size: cover;
+        }
+
+        .info{
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+            color: black;
+            h1{
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 600;
+                margin:0;
+                margin-bottom: 10px;
+            }
+            h3{
+                font-size: 18px;
+                font-weight: 400;
+                margin: 0;
+                span{
+                    color: rgba(black, 0.5);
+                }
+            }
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                color: rgba(black, 0.5);
+            }
+        }
+
+
+        &:hover{
+            background-color: rgba($l-icon, 0.2);
+        }
+    }
+
+    .title{
+        text-align: center;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        width: fit-content;
+        img{
+            width: 250px;
+            margin-bottom: 10px;
+        }
+        h3{
+            border-top: 1px solid rgba(black, 0.3);
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 400;
+            padding-top: 10px;
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
+
+
+
+
