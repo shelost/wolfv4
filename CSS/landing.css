@@ -221,17 +221,17 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     background: black;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: 20px;
-    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 15px;
+    border-radius: 30px;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
     color: white;
   }
   .flagship .row .store svg {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
   }
   .flagship .row .store h2 {
     font-size: 20px;
@@ -244,7 +244,6 @@
   }
   .animation {
     margin: 0px;
-    margin-left: 100px;
     width: 280px;
     height: 560px;
     border-radius: 30px;
@@ -265,26 +264,26 @@
             flex-direction: column;
   }
   .expo h1 {
-    font-size: 50px;
-    line-height: calc(50px + 5px);
+    font-size: 38px;
+    line-height: 44px;
     margin: 0;
   }
   .expo h1 .italic {
     font-style: italic;
   }
   .expo p {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .expo .button {
     background: #0076FF;
     margin-top: 10px;
     padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 20px;
     font-weight: 400;
-    border-radius: 10px;
+    border-radius: 30px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -317,6 +316,9 @@
             box-shadow: 0 -30px 100px rgba(0, 54, 194, 0.2);
     z-index: 3;
   }
+  .slide .animation {
+    margin-left: 100px;
+  }
   .slide.first {
     background: none;
     z-index: 1;
@@ -328,6 +330,10 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .slide.right .animation {
+    margin-left: 0;
+    margin-right: 100px;
   }
   .slide.gone {
     opacity: 0.2;

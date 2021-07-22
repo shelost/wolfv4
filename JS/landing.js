@@ -134,7 +134,7 @@ const LandingLoop = () => {
         }
 
         if (i < Class('slide').length-1){
-            if (index > threshold*i){
+            if (index > 4*i){
                 slide.style.opacity = 0;
                 slide.style.position = 'static'
             }else if (index > 1.2*i ){
@@ -143,6 +143,10 @@ const LandingLoop = () => {
                 slide.style.opacity = 1;
             }
 
+        }
+
+        if (i == 0){
+            slide.style.opacity = 1;
         }
     }
 
@@ -153,12 +157,14 @@ const LandingLoop = () => {
         Id('pointer').style.opacity = 0.5
     }
 
+    /*
     if (array[array.length-1] != array[array.length-2]){
         academyAnim.goToAndPlay(1, true)
         wolfpackAnim.goToAndPlay(1, true)
         portfolioAnim.goToAndPlay(1, true)
         analysisAnim.goToAndPlay(1, true)
     }
+    */
 
     // Dots
     if (integer < 5){
@@ -186,6 +192,7 @@ const LandingLoop = () => {
 
     if (window.innerWidth < 800){
 
+        /*
         for (let i=0; i<Class('right').length; i++){
             let slide = Class('right')[i]
             let content = slide.firstElementChild
@@ -195,10 +202,12 @@ const LandingLoop = () => {
             expo.style.transform = `translateY(${anim.getBoundingClientRect().height}px)`
             anim.style.transform = `translateY(-${expo.getBoundingClientRect().height}px)`
         }
+        */
 
     }else{
 
         Class('flagship')[0].style.transform = ``
+        /*
 
         for (let i=0; i<Class('right').length; i++){
             let slide = Class('right')[i]
@@ -209,6 +218,7 @@ const LandingLoop = () => {
             expo.style.transform = ``
             anim.style.transform = ``
         }
+        */
 
         for (let i=0; i<waves.length; i++){
             let wave = waves[i]

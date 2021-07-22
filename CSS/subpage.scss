@@ -48,6 +48,7 @@ body{
 }
 
 @media screen and (min-width: 800px){
+
     .title{
         text-align: center;
         margin: auto;
@@ -55,21 +56,20 @@ body{
         flex-direction: column;
         align-items: center;
         padding-top: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
 
         h1{
-            font-size: $header;
+            font-size: 36px;
             line-height: calc(#{$header} + 5px);
             font-weight: 700;
             margin: 0;
-            margin-bottom: 10px;
             span{
                 font-style: italic;
             }
         }
         h2{
-            font-size: $subtitle;
-            font-weight: 500;
+            font-size: 24px;
+            font-weight: 400;
             margin: 0;
             margin-bottom: 80px;
         }
@@ -78,6 +78,7 @@ body{
             height: 560px;
             background-color: white;
             border-radius: 15px;
+            display: none;
             &.dark{
                 background-color: $background;
             }
@@ -91,7 +92,7 @@ body{
         width: 100vw;
         height: 400px;
         transition: 0.3s ease;
-        margin-bottom: 50px;
+        margin-bottom: 0;
 
         img{
             height: 100%;
@@ -102,21 +103,22 @@ body{
             width: 35%;
             max-width: 600px;
             h2{
-                font-size: $subtitle;
+                font-size: 20px;
+                margin: 0;
+                margin-bottom: 5px;
                 font-weight: 500;
-                margin: 5px;
                 color: #a0a0a0;
             }
             h1{
-                font-size: $header;
-                line-height: calc(#{$header} + 5px);
+                font-size: 32px;
+                line-height: 40px;
                 font-weight: 700;
                 margin: 0;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
             p{
-                font-size: $paragraph;
-                line-height: calc(#{$paragraph} + 7px);
+                font-size: 18px;
+                line-height: 24px;
                 font-weight: 400;
                 margin: 0;
                 width: 90%;
